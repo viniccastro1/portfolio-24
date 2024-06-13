@@ -2,5 +2,37 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
+:root {
+  font-size: 22px;
+}
+
+.fs-h6 {
+  font-size: 28px;
+}
+
+.fs-h5 {
+  font-size: 35px;
+}
+
+.fs-h4 {
+  font-size: 43px;
+}
+
+.fs-h3 {
+  font-size: 54px;
+  font-weight: bold;
+}
+
+.fs-h2 {
+  font-size: 67px;
+  font-weight: bold;
+}
+
+.fs-h1 {
+  font-size: 84px;
+  font-weight: bold;
+}
+
+strong {
+  font-size: inherit;
 }

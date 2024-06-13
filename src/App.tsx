@@ -1,18 +1,11 @@
-import { useState } from "react";
 import "./App.css";
+import LandingPage from "./pages/LandingPage";
 
 function App() {
-  function myfunc() {
-    return 2;
-  }
-
-  function myfunc2() {
-    return 2;
-  }
 
   return (
     <>
-      <div className="fs text-gray-600">asdasd</div>
+      <LandingPage />
     </>
   );
 }
