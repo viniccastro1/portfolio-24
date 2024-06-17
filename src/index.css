@@ -4,6 +4,11 @@
 
 :root {
   font-size: 22px;
+  color: #000000dc;
+}
+
+strong {
+  font-size: inherit;
 }
 
 .fs-h6 {
@@ -20,19 +25,21 @@
 
 .fs-h3 {
   font-size: 54px;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .fs-h2 {
   font-size: 67px;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .fs-h1 {
   font-size: 84px;
-  font-weight: bold;
+  font-weight: 700;
 }
 
-strong {
-  font-size: inherit;
+.background-landing {
+  background-image: url("/src/assets/images/background_chevron_purple.png");
+  background-repeat: repeat;
+  background-size: 4%;
 }

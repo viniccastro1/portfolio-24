@@ -1,11 +1,18 @@
 import "./App.css";
-import LandingPage from "./pages/LandingPage";
+import BuildTogether from "./sections/BuildTogether";
+import Footer from "./sections/Footer";
+import HowWillBeDone from "./sections/HowWillBeDone";
+import ReadyToStart from "./sections/ReadyToStart";
+import Welcome from "./sections/Welcome";
 
 function App() {
-
   return (
     <>
-      <LandingPage />
+      <Welcome />
+      <BuildTogether />
+      <HowWillBeDone />
+      <ReadyToStart />
+      <Footer />
     </>
   );
 }
