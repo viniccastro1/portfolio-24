@@ -1,6 +1,9 @@
 import ScrollAnimation from "react-animate-on-scroll";
 
 const BuildTogether: React.FunctionComponent = () => {
+
+  // const 
+
   return (
     <div
       id="build-together-section"
@@ -8,7 +11,7 @@ const BuildTogether: React.FunctionComponent = () => {
     >
       <ScrollAnimation animateIn="animation-fade-in-right" animateOnce>
         <p className="fs-h2 mb-3 text-center">
-          What can we <span className="text-primary ">build</span> together
+          What can we <span className="text-primary ">build</span> together?
         </p>
       </ScrollAnimation>
       <div className="max-w-96 flex items-center flex-col">

@@ -28,7 +28,7 @@ const ReadyToStart: React.FunctionComponent = () => {
             delay={850}
           >
             <p className="mb-1">
-              Then lets get in touch and we can schedule a call:
+              Then, lets get in touch and we can schedule a call:
             </p>
           </ScrollAnimation>
           <ScrollAnimation

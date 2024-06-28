@@ -11,7 +11,7 @@ interface IListElementProps {
   scrollAnimationClass?: string;
 }
 
-const ListElement: React.FunctionComponent = (props: IListElementProps) => {
+const ListElement: React.FunctionComponent<IListElementProps> = (props) => {
   const {
     orderNumber,
     imagePosition = "left",

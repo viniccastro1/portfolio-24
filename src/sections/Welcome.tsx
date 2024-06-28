@@ -2,7 +2,7 @@ import React from "react";
 
 const Welcome: React.FunctionComponent = () => {
   const handleClick = () => {
-    const element = document.getElementById("build-together-section");
+    const element = document.getElementById("know-the-dev-section");
     element?.scrollIntoView({ behavior: "smooth" });
   };
 
@@ -18,7 +18,7 @@ const Welcome: React.FunctionComponent = () => {
           />
         </div>
         <p className="fs-h3 text animation-fade-in-left text-shadow-md">
-          Hi, I'm <span className="text-secondary">Vin Castro</span>.
+          Hi, I'm <span className="text-secondary">Vini</span>.
         </p>
         <div className="flex flex-col gap-2 items-center">
           <p className="fs-h5 animation-fade-in-right text-shadow-md">
