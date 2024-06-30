@@ -7,6 +7,7 @@ export default {
       sans: ["Poppins", "sans-serif"],
     },
     spacing: {
+      0: "0px",
       1: "8px",
       2: "16px",
       3: "24px",
@@ -20,7 +21,7 @@ export default {
       11: "88px",
       12: "96px",
       30: "240px",
-      45: '360px',
+      45: "360px",
       69: "552px",
       70: "560px",
       96: "768px",

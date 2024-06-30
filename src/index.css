@@ -171,11 +171,23 @@ strong {
 }
 
 .animation-delay-100 {
-  animation-delay: 100ms;
+  animation-delay: 100ms !important;
 }
 
 .animation-delay-250 {
-  animation-delay: 250ms;
+  animation-delay: 250ms !important;
+}
+
+.animation-delay-400 {
+  animation-delay: 400ms !important;
+}
+
+.animation-delay-550 {
+  animation-delay: 550ms !important;
+}
+
+.animation-delay-700 {
+  animation-delay: 700ms !important;
 }
 
 .tilt-right-light {
