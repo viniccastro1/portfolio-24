@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
+const NAME = {
+  NICKNAME: "Vini",
+  FULLNAME: "Vinicius de Castro",
+};
 
 const Welcome: React.FunctionComponent = () => {
-  const nickname: string = "Vini";
-  const fullName: string = "Vinicius de Castro";
-
-  const [displayedName, setDisplayedName] = useState<string>(nickname);
+  const [displayedName, setDisplayedName] = useState<string>(NAME.NICKNAME);
   const [isNameHovered, setIsNameHovered] = useState<boolean>(false);
   const [textAnimation, setTextAnimation] = useState<
     null | "toFullName" | "toNickname"
@@ -35,24 +36,24 @@ const Welcome: React.FunctionComponent = () => {
       if (textAnimation === "toFullName") {
         // in case the full name is already written, stops it.
         if (
-          displayedName === fullName ||
-          displayedName.length >= fullName.length
+          displayedName === NAME.FULLNAME ||
+          displayedName.length >= NAME.FULLNAME.length
         ) {
-          setDisplayedName(fullName);
+          setDisplayedName(NAME.FULLNAME);
           setTextAnimation(null);
           return;
         }
         setDisplayedName((prev) => {
-          const characterToAdd: string = fullName.replace(prev, "")[0];
+          const characterToAdd: string = NAME.FULLNAME.replace(prev, "")[0];
           return prev + characterToAdd;
         });
-        // in case the nickname is already written, stops it.
+        // in case the NAME.NICKNAME is already written, stops it.
       } else if (textAnimation === "toNickname") {
         if (
-          displayedName === nickname ||
-          displayedName.length <= nickname.length
+          displayedName === NAME.NICKNAME ||
+          displayedName.length <= NAME.NICKNAME.length
         ) {
-          setDisplayedName(nickname);
+          setDisplayedName(NAME.NICKNAME);
           setTextAnimation(null);
           return;
         }
