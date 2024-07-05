@@ -18,9 +18,9 @@ const ProjectCase: React.FunctionComponent<IProjectCase> = (props) => {
       delay={animationDelay}
     >
       <div
-        className={`flex gap-4 items-center justify-center w-full ${imageDirection === "right" ? "flex-row-reverse" : ""}`}
+        className={`flex-col md:flex-row flex gap-4 items-center justify-center w-full ${imageDirection === "right" ? "md:flex-row-reverse" : ""}`}
       >
-        <p>{text}</p>
+        <p className="text-center md:text-left">{text}</p>
         <div className="flex flex-col items-center gap-1 relative">
           <img
             className="w-30 max-w-none h-full rounded-md"
@@ -72,10 +72,10 @@ const KnowTheDeveloper = () => {
   return (
     <div
       id="know-the-dev-section"
-      className="min-h-screen flex-col bg-secondary flex items-center py-4 px-2"
+      className="min-h-screen flex-col bg-secondary flex items-center p-1 pt-4 md:p-4"
     >
       <ScrollAnimation animateIn="animation-fade-in" animateOnce>
-        <p className="fs-h1 mb-8">
+        <p className="fs-h2 mb-8 text-center">
           Know The <span className="text-primarylight">Developer</span>
         </p>
       </ScrollAnimation>

@@ -1,7 +1,7 @@
 const Footer: React.FunctionComponent = () => {
   return (
-    <footer className="flex flex-col pt-6 pb-5 gap-6">
-      <div className="flex justify-center gap-12">
+    <footer className="flex flex-col pt-6 pb-5 gap-6 p-3 text-center">
+      <div className="flex justify-between md:justify-center gap-2 md:gap-12 flex-wrap text-left">
         <div>
           <strong>Contact</strong>
           <p>viniccastro1@gmail.com</p>

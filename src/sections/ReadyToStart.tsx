@@ -3,16 +3,16 @@ import ScrollAnimation from "react-animate-on-scroll";
 const ReadyToStart: React.FunctionComponent = () => {
   return (
     <div className="flex min-h-screen w-full text-white">
-      <div className="bg-blue-400 w-2/5 hidden lg:flex overflow-hidden">
+      <div className="bg-blue-400 w-2/5 hidden md:flex overflow-hidden">
         <img
           className="animation-expand-light w-full h-full shadow-2xl object-cover"
           src="/src/assets/images/castro.jpg"
           alt="picture of the professional"
         />
       </div>
-      <div className="flex flex-col bg-primarylight w-full lg:w-3/5 lg:pl-10 sm:p-6 sm:pt-12 ">
+      <div className="flex flex-col bg-primarylight w-full md:w-3/5 md:pl-10 p-1 pt-3 md:p-6 md:pt-12 ">
         <ScrollAnimation animateIn="animation-fade-in" animateOnce>
-          <p className="fs-h2 mb-6">
+          <p className="fs-h2 mb-6 overflow-hidden">
             Ready to start your{" "}
             <ScrollAnimation
               animateIn="animation-fade-in"
@@ -22,6 +22,14 @@ const ReadyToStart: React.FunctionComponent = () => {
               <span className="text-tertiary">new project</span>?
             </ScrollAnimation>
           </p>
+
+          {/* <div className="h-30 mb-4 md:hidden overflow-hidden">
+            <img
+              className="animation-expand-light w-full h-full shadow-2xl object-cover object-top"
+              src="/src/assets/images/castro_face_at_center.jpg"
+              alt="picture of the professional"
+            />
+          </div> */}
           <ScrollAnimation
             animateIn="animation-fade-in"
             animateOnce

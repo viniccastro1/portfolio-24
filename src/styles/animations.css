@@ -1,0 +1,141 @@
+/* ANIMATIONS */
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 100;
+  }
+}
+
+@keyframes left-right {
+  0% {
+    transform: translate(-50%, 0%);
+  }
+
+  100% {
+    transform: translate(0%, 0%);
+  }
+}
+
+@keyframes right-left {
+  0% {
+    transform: translate(50%, 0%);
+  }
+
+  100% {
+    transform: translate(0%, 0%);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translate(0%, 0%);
+  }
+
+  /* 70% {
+      transform: translate(0%, -20%);
+    } */
+
+  100% {
+    transform: translate(0%, -15%);
+  }
+}
+
+@keyframes float-light {
+  0% {
+    transform: translate(0%, 0%);
+  }
+
+  /* 70% {
+      transform: translate(0%, -20%);
+    } */
+
+  100% {
+    transform: translate(0%, -6%);
+  }
+}
+
+@keyframes tilt-right-light {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(5deg);
+  }
+}
+
+@keyframes expand-light {
+  0% {
+    transform: scale(100%);
+  }
+
+  100% {
+    transform: scale(102%);
+  }
+}
+
+.animation-fade-in {
+  animation: fade-in 750ms;
+}
+
+.animation-left-right {
+  animation: left-right 750ms;
+}
+
+.animation-right-left {
+  animation: right-left 750ms;
+}
+
+.animation-fade-in-right {
+  animation:
+    fade-in 750ms,
+    left-right 750ms;
+}
+
+.animation-fade-in-right-float {
+  animation:
+    fade-in 750ms,
+    left-right 750ms,
+    float 500ms ease-in-out 750ms infinite alternate;
+}
+
+.animation-fade-in-left {
+  animation:
+    fade-in 750ms,
+    right-left 750ms;
+}
+
+.animation-float-light {
+  animation: float-light 1250ms infinite alternate linear;
+}
+
+.tilt-right-light {
+  animation: tilt-right-light 125ms;
+}
+
+.animation-expand-light {
+  animation: expand-light 1250ms infinite alternate linear;
+}
+
+.animation-delay-100 {
+  animation-delay: 100ms !important;
+}
+
+.animation-delay-250 {
+  animation-delay: 250ms !important;
+}
+
+.animation-delay-400 {
+  animation-delay: 400ms !important;
+}
+
+.animation-delay-550 {
+  animation-delay: 550ms !important;
+}
+
+.animation-delay-700 {
+  animation-delay: 700ms !important;
+}

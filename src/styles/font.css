@@ -1,0 +1,88 @@
+.fs-xsm {
+  font-size: 14px;
+}
+
+.fs-sm {
+  font-size: 16px;
+}
+
+.fs-h6 {
+  font-size: 28px;
+}
+
+.fs-h5 {
+  font-size: 35px;
+}
+
+.fs-h4 {
+  font-size: 43px;
+}
+
+.fs-h3 {
+  font-size: 54px;
+  font-weight: 700;
+}
+
+.fs-h2 {
+  font-size: 67px;
+  font-weight: 700;
+}
+
+.fs-h1 {
+  font-size: 84px;
+  font-weight: 700;
+}
+
+.text-shadow-md {
+  text-shadow: 6px 6px 4px rgb(0, 0, 0, 0.2);
+}
+
+@media only screen and (max-width: 900px) {
+  p {
+    font-size: 18px;
+  }
+
+  .fs-h1 {
+    font-size: 53.75px;
+  }
+
+  .fs-h2 {
+    font-size: 44.79px;
+  }
+
+  .fs-h3 {
+    font-size: 37.32px;
+  }
+
+  .fs-h4 {
+    font-size: 31.1px;
+  }
+
+  .fs-h5 {
+    font-size: 25.92px;
+  }
+
+  .fs-h6 {
+    font-size: 21.6px;
+  }
+}
+
+/* @media only screen and (max-width: 780px) {
+  .fs-h1 {
+    font-size: 54px;
+  }
+
+  .fs-h2 {
+    font-size: 38px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .fs-h1 {
+    font-size: 43px;
+  }
+
+  .fs-h2 {
+    font-size: 32px;
+  }
+} */

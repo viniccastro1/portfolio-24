@@ -11,7 +11,7 @@ const Welcome: React.FunctionComponent = () => {
     null | "toFullName" | "toNickname"
   >("toNickname");
 
-  const handleClick = () => {
+  const handleLearnMoreClick = () => {
     const element = document.getElementById("know-the-dev-section");
     element?.scrollIntoView({ behavior: "smooth" });
   };
@@ -68,10 +68,10 @@ const Welcome: React.FunctionComponent = () => {
   }, [displayedName, textAnimation]);
 
   return (
-    <div className="min-h-screen bg-primary flex flex-col text-white p-4 background-landing">
+    <div className="min-h-screen bg-primary flex flex-col text-white p-1 md:p-4 background-landing">
       <div className="p-3 px-2 text-yellow-400 absolute">Header</div>
-      <div className="flex items-center justify-center grow flex-col text-center max-w-96 auto m-auto">
-        <div className="shadow-2xl rounded-full mb-4 animation-fade-in animation-fade-in-right">
+      <div className="flex items-center justify-center grow flex-col text-center md:max-w-70 lg:max-w-96 m-auto">
+        <div className="shadow-2xl rounded-full mb-4 animation-fade-in animation-fade-in-right w-30 h-30 max-h-full max-w-full">
           <img
             className="w-full h-full shadow-2xl rounded-full"
             src="/src/assets/images/castro_circle.png"
@@ -114,7 +114,7 @@ const Welcome: React.FunctionComponent = () => {
               the ideas of my internal and external clients into reality.
             </p>
             <button
-              onClick={handleClick}
+              onClick={handleLearnMoreClick}
               className="shadow-2xl hover:text-secondary hover:border-secondary animation-fade-in-right-float transition-all uppercase font-bold rounded-md py-1 px-2 border-4 gap-2 flex items-center "
             >
               <p>Learn More</p>
